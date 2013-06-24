@@ -7,7 +7,7 @@ import subprocess
 import config
 
 # Launch web server
-p = subprocess.Popen(['/usr/bin/python2', 'server.py'])
+p = subprocess.Popen(['/usr/bin/python', config.DIR + 'server.py'])
 
 # Update the feeds
 try:
