@@ -120,7 +120,7 @@ class TweetGetter(object):
 
     def to_rss(self, server=config.SERVER):
         try:
-            with open('rss-model.tpl') as template_file:
+            with open(config.DIR+'rss-model.tpl') as template_file:
                 items = list(map(lambda tweet: tweet.to_jinja2(), self.tweets))
                 try:
                     descriptor = '#' + self.hashtag
@@ -129,7 +129,7 @@ class TweetGetter(object):
                 template = Template(template_file.read())
                 return template.render(server=server, title=self.title, descriptor=descriptor, url=self.url, tweets=items)
         except IOError:
-            return 'File could not be open'
+            return 'Template file could not be open'
 
 
 class UserTweetGetter(TweetGetter):
