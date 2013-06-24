@@ -10,7 +10,7 @@
 ### END INIT INFO
 PATH="/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/opt/node/bin"
 LOGFILE="/var/log/twitter-rss/twitter-rss.log"
-TWRSS_DIR="/var/www/wtf.roflcopter.fr/twitter-rss"
+TWRSS_DIR="/var/www/twitter-rss"
 TWRSS_BIN="run.py"
 USER="www-data"
 GROUP="www-data"
