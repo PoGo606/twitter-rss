@@ -5,21 +5,16 @@ html {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-h1 {
+#title {
   height:200px;
   line-height:200px;
-}
-
-form {
-  margin: 0 0 0px;
-  height: 60px;
 }
 
 footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  font-size: 60%;
   text-align: center;
   border-top: 1px solid #ddd;
+  padding-top: 10px;
 }
